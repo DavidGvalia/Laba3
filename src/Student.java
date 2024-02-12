@@ -1,24 +1,17 @@
-public class Student {
-    private String name;
-    private String surname;
-    private String patronymic;
+public class Student extends Person {
     double averageGrade;
     int attendance;
 
-    public Student(String name, String surname, String patronymic, double averageGrade, int attendance){
-        this.name = name;
+    public Student(String surname, String name, String patronymic, double averageGrade, int attendance){
         this.surname = surname;
+        this.name = name;
         this.patronymic = patronymic;
         this.averageGrade = averageGrade;
         this.attendance = attendance;
     }
 
-    public String getFullName(){
-        return surname + " " + name + " " + patronymic;
-    }
-    public String getName(){
-        return name;
-    }
+
+
     public double getAverageGrade(){
         return averageGrade;
     }
